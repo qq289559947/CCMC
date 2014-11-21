@@ -23,6 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _mainTableView.sectionHeaderHeight = 50;
     
     GetXML *getXml = [GetXML getXMLWithDelegate:self];
     NSArray *array = @[@"firstLevel",@"secondLevel",@"word",@"ppt",@"video"];
@@ -48,14 +49,15 @@
 }
 
 //加载tableview 数据
+//分组数
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return _firstLevelArray.count;
 }
-
+//组中cell数量
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return 5;
 }
-
+//生成cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
@@ -63,6 +65,12 @@
     cell.textLabel.text=@"dssfsfdsfds";
     
     return cell;
+}
+//加载头部空间
+- (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    KWJSectionHeaderView *header = [KWJSectionHeaderView headerViewWithTableView:tableView];
+    [header setFirst:_firstLevelArray[section]];
+    return header;
 }
 
 @end

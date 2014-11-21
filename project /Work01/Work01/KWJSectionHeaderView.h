@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FirstLevel.h"
 
 @interface KWJSectionHeaderView : UITableViewHeaderFooterView
+
++(instancetype)headerViewWithTableView:(UITableView *)tableView;
+
+@property (nonatomic) FirstLevel *first;
 
 @end

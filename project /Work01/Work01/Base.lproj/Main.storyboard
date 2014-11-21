@@ -148,6 +148,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="f9R-Xz-V2K"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="mainTableView" destination="695-pW-bbo" id="Qhm-yF-Mze"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z33-ga-cFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

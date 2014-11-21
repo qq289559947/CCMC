@@ -26,6 +26,7 @@
 		B676AC241A1EF78F000C6AC0 /* FirstLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC231A1EF78F000C6AC0 /* FirstLevel.m */; };
 		B676AC271A1EF7C6000C6AC0 /* SecondLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC261A1EF7C6000C6AC0 /* SecondLevel.m */; };
 		B676AC2A1A1F1D90000C6AC0 /* KWJSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */; };
+		B676AC301A1F2783000C6AC0 /* SectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC2F1A1F2783000C6AC0 /* SectionCell.m */; };
 		B6BE06FD1A1DC5A300BC7721 /* GetXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BE06FC1A1DC5A300BC7721 /* GetXML.m */; };
 		B6BE07021A1DDDC900BC7721 /* Inn.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BE07011A1DDDC900BC7721 /* Inn.m */; };
 /* End PBXBuildFile section */
@@ -77,6 +78,8 @@
 		B676AC261A1EF7C6000C6AC0 /* SecondLevel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondLevel.m; sourceTree = "<group>"; };
 		B676AC281A1F1D90000C6AC0 /* KWJSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWJSectionHeaderView.h; sourceTree = "<group>"; };
 		B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWJSectionHeaderView.m; sourceTree = "<group>"; };
+		B676AC2E1A1F2783000C6AC0 /* SectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionCell.h; sourceTree = "<group>"; };
+		B676AC2F1A1F2783000C6AC0 /* SectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionCell.m; sourceTree = "<group>"; };
 		B6BE06FB1A1DC5A300BC7721 /* GetXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetXML.h; sourceTree = "<group>"; };
 		B6BE06FC1A1DC5A300BC7721 /* GetXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetXML.m; sourceTree = "<group>"; };
 		B6BE07001A1DDDC900BC7721 /* Inn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inn.h; sourceTree = "<group>"; };
@@ -276,6 +279,8 @@
 			children = (
 				B676AC281A1F1D90000C6AC0 /* KWJSectionHeaderView.h */,
 				B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */,
+				B676AC2E1A1F2783000C6AC0 /* SectionCell.h */,
+				B676AC2F1A1F2783000C6AC0 /* SectionCell.m */,
 			);
 			name = SelectCourseController;
 			sourceTree = "<group>";
@@ -434,6 +439,7 @@
 				B6BE06FD1A1DC5A300BC7721 /* GetXML.m in Sources */,
 				B60DBE631A1AFFA7009410EA /* Loading.m in Sources */,
 				B645396A1A19C9B20041AB77 /* AppDelegate.m in Sources */,
+				B676AC301A1F2783000C6AC0 /* SectionCell.m in Sources */,
 				B64539961A19D6610041AB77 /* SelectProjectController.m in Sources */,
 				B62F918A1A1C3C7D00CEF6D9 /* Course.m in Sources */,
 				B64539671A19C9B20041AB77 /* main.m in Sources */,
