@@ -14,7 +14,7 @@
 @property (nonatomic,copy) NSString *title;
 @property (nonatomic,copy) NSString *subtitle;
 
-@property (nonatomic) NSMutableArray *work;
+@property (nonatomic) NSMutableArray *word;
 @property (nonatomic) NSMutableArray *ppt;
 @property (nonatomic) NSMutableArray *video;
 

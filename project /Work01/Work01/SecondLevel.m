@@ -20,7 +20,7 @@
 -(id)initWithArray:(NSArray *)array{
     if (self = [super init]) {
         
-        _work = [NSMutableArray array];
+        _word = [NSMutableArray array];
         _ppt = [NSMutableArray array];
         _video = [NSMutableArray array];
         
@@ -33,7 +33,7 @@
             NSString *key = [temp allKeys][0];
             
             if ([key isEqualToString:@"word"]) {
-                [_work addObject:[Courseware coursewareWithArray:temp[key]]];
+                [_word addObject:[Courseware coursewareWithArray:temp[key]]];
             }else if ([key isEqualToString:@"ppt"]){
                 [_ppt addObject:[Courseware coursewareWithArray:temp[key]]];
             }else if ([key isEqualToString:@"video"]){

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "GetXML.h"
 #import "KWJSectionHeaderView.h"
+#import "SectionCell.h"
 
-@interface SelectCourseController : UIViewController<getXmlDelegate,UITableViewDataSource,UITableViewDelegate>
+@interface SelectCourseController : UIViewController<getXmlDelegate,UITableViewDataSource,UITableViewDelegate,KWJSectionHeaderViewDelegate,KWJLableButtonDelegate>
 
 @property (nonatomic,copy) NSString *xmlPath;//课程xml的地址
 

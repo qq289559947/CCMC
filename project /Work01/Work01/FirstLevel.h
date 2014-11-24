@@ -14,6 +14,9 @@
 @property (nonatomic,copy) NSString *subtitle;
 @property (nonatomic)NSMutableArray *secondLevel;
 
+//是否 展开选课列表
+@property (nonatomic,assign,getter=isOpened) BOOL opened;
+
 +(instancetype)firstLevelWithArray:(NSArray *)array;
 
 @end

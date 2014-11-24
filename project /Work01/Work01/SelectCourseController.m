@@ -24,6 +24,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     _mainTableView.sectionHeaderHeight = 50;
+    _mainTableView.rowHeight = 44;
+    
+    self.mainTableView.separatorStyle = UITableViewCellSeparatorStyleNone;//去除cell的分隔线
     
     GetXML *getXml = [GetXML getXMLWithDelegate:self];
     NSArray *array = @[@"firstLevel",@"secondLevel",@"word",@"ppt",@"video"];
@@ -55,22 +58,37 @@
 }
 //组中cell数量
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 5;
+    FirstLevel * f = _firstLevelArray[section];
+//    return f.secondLevel.count;
+    return f.isOpened?f.secondLevel.count:0;
 }
 //生成cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    FirstLevel * f = _firstLevelArray[indexPath.section];
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
-    cell.textLabel.text=@"dssfsfdsfds";
+    SectionCell *cell = [SectionCell cellWithTableView:tableView];
+    [cell setSecondLevel:f.secondLevel[indexPath.row] buttonDeleget:self];
     
     return cell;
 }
 //加载头部空间
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
     KWJSectionHeaderView *header = [KWJSectionHeaderView headerViewWithTableView:tableView];
+    header.delegates = self;
     [header setFirst:_firstLevelArray[section]];
     return header;
+}
+
+//头部控件 点击 代理事件
+- (void)headerViewDidClickedMainView:(KWJSectionHeaderView *)headerView{
+    [_mainTableView reloadData];
+}
+
+//cell 按钮点击 代理事件
+-(void)labelButtonClick:(KWJLableButton *)button{
+//    NSLog(@"%@ ",button.title);
+    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:button.title message:@"选择" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"取消", nil];
+    [alertView show];
 }
 
 @end

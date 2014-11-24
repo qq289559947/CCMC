@@ -27,6 +27,8 @@
 		B676AC271A1EF7C6000C6AC0 /* SecondLevel.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC261A1EF7C6000C6AC0 /* SecondLevel.m */; };
 		B676AC2A1A1F1D90000C6AC0 /* KWJSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */; };
 		B676AC301A1F2783000C6AC0 /* SectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B676AC2F1A1F2783000C6AC0 /* SectionCell.m */; };
+		B6911E361A22C9F900817B1A /* KWJLableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B6911E351A22C9F900817B1A /* KWJLableButton.m */; };
+		B6911E401A231F1A00817B1A /* KWJCourseAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B6911E3F1A231F1A00817B1A /* KWJCourseAlertView.m */; };
 		B6BE06FD1A1DC5A300BC7721 /* GetXML.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BE06FC1A1DC5A300BC7721 /* GetXML.m */; };
 		B6BE07021A1DDDC900BC7721 /* Inn.m in Sources */ = {isa = PBXBuildFile; fileRef = B6BE07011A1DDDC900BC7721 /* Inn.m */; };
 /* End PBXBuildFile section */
@@ -80,6 +82,10 @@
 		B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWJSectionHeaderView.m; sourceTree = "<group>"; };
 		B676AC2E1A1F2783000C6AC0 /* SectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SectionCell.h; sourceTree = "<group>"; };
 		B676AC2F1A1F2783000C6AC0 /* SectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SectionCell.m; sourceTree = "<group>"; };
+		B6911E341A22C9F900817B1A /* KWJLableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWJLableButton.h; sourceTree = "<group>"; };
+		B6911E351A22C9F900817B1A /* KWJLableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWJLableButton.m; sourceTree = "<group>"; };
+		B6911E3E1A231F1A00817B1A /* KWJCourseAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWJCourseAlertView.h; sourceTree = "<group>"; };
+		B6911E3F1A231F1A00817B1A /* KWJCourseAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWJCourseAlertView.m; sourceTree = "<group>"; };
 		B6BE06FB1A1DC5A300BC7721 /* GetXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetXML.h; sourceTree = "<group>"; };
 		B6BE06FC1A1DC5A300BC7721 /* GetXML.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetXML.m; sourceTree = "<group>"; };
 		B6BE07001A1DDDC900BC7721 /* Inn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Inn.h; sourceTree = "<group>"; };
@@ -281,6 +287,10 @@
 				B676AC291A1F1D90000C6AC0 /* KWJSectionHeaderView.m */,
 				B676AC2E1A1F2783000C6AC0 /* SectionCell.h */,
 				B676AC2F1A1F2783000C6AC0 /* SectionCell.m */,
+				B6911E341A22C9F900817B1A /* KWJLableButton.h */,
+				B6911E351A22C9F900817B1A /* KWJLableButton.m */,
+				B6911E3E1A231F1A00817B1A /* KWJCourseAlertView.h */,
+				B6911E3F1A231F1A00817B1A /* KWJCourseAlertView.m */,
 			);
 			name = SelectCourseController;
 			sourceTree = "<group>";
@@ -436,8 +446,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6911E361A22C9F900817B1A /* KWJLableButton.m in Sources */,
 				B6BE06FD1A1DC5A300BC7721 /* GetXML.m in Sources */,
 				B60DBE631A1AFFA7009410EA /* Loading.m in Sources */,
+				B6911E401A231F1A00817B1A /* KWJCourseAlertView.m in Sources */,
 				B645396A1A19C9B20041AB77 /* AppDelegate.m in Sources */,
 				B676AC301A1F2783000C6AC0 /* SectionCell.m in Sources */,
 				B64539961A19D6610041AB77 /* SelectProjectController.m in Sources */,

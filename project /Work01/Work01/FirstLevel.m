@@ -14,6 +14,8 @@
 +(instancetype)firstLevelWithArray:(NSArray *)array{
     FirstLevel *firstl = [[FirstLevel alloc]initWithArray:array];
     
+    [firstl setOpened:false];
+    
     return firstl;
 }
 

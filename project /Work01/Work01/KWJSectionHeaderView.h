@@ -8,11 +8,20 @@
 
 #import <UIKit/UIKit.h>
 #import "FirstLevel.h"
+@class KWJSectionHeaderView;
+
+@protocol KWJSectionHeaderViewDelegate <NSObject>
+@optional
+- (void)headerViewDidClickedMainView:(KWJSectionHeaderView *)headerView;
+
+@end
 
 @interface KWJSectionHeaderView : UITableViewHeaderFooterView
 
 +(instancetype)headerViewWithTableView:(UITableView *)tableView;
 
-@property (nonatomic) FirstLevel *first;
+@property (nonatomic,strong) FirstLevel *first;
+
+@property (nonatomic,weak) id<KWJSectionHeaderViewDelegate> delegates;
 
 @end
