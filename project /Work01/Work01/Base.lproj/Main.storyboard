@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <scenes>
-        <!--iten-->
+        <!--智库-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
                 <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
@@ -38,7 +38,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="iten" id="SSN-kH-bp6"/>
+                    <tabBarItem key="tabBarItem" title="智库" id="SSN-kH-bp6"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fBm-r0-GJo" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1400.25" y="614.5"/>
+            <point key="canvasLocation" x="1183.5" y="614.5"/>
         </scene>
         <!--Select Course Controller-->
         <scene sceneID="hyE-9f-pEf">
@@ -141,11 +141,32 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="mainTableView" destination="695-pW-bbo" id="Qhm-yF-Mze"/>
+                        <segue destination="HWT-pW-mSe" kind="push" id="arh-KS-EJG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z33-ga-cFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2097.75" y="614.5"/>
+            <point key="canvasLocation" x="1667.5" y="614.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="18J-M2-e8N">
+            <objects>
+                <viewController id="HWT-pW-mSe" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="h3d-Hs-xGG"/>
+                        <viewControllerLayoutGuide type="bottom" id="N9P-5i-JOQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="YBP-vV-UIP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="V2X-X8-v5z"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f8i-Qt-RFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2144.5" y="614.5"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Ipi-mh-sqH">
@@ -168,7 +189,7 @@
             </objects>
             <point key="canvasLocation" x="-323.25" y="745.5"/>
         </scene>
-        <!--my-->
+        <!--我-->
         <scene sceneID="1Dv-Bx-Lpz">
             <objects>
                 <viewController id="ycC-9D-lLg" sceneMemberID="viewController">
@@ -181,18 +202,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="my" id="uOb-lh-tTz"/>
+                    <tabBarItem key="tabBarItem" title="我" id="uOb-lh-tTz"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TkM-DJ-Pug" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="705.75" y="1346.5"/>
         </scene>
-        <!--course-->
+        <!--学习-->
         <scene sceneID="hvU-2A-4s8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ced-pN-p7e" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="course" id="GBh-6D-clg"/>
+                    <tabBarItem key="tabBarItem" title="学习" id="GBh-6D-clg"/>
                     <toolbarItems/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="jj4-kr-rxE">

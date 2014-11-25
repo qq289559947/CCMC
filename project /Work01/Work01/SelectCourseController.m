@@ -10,6 +10,8 @@
 #import "GetXML.h"
 #import "FirstLevel.h"
 
+#import "KWJCourseAlertView.h"
+
 #define XMLPATH @"http://ccmc.sinaapp.com/App/Common/Courses/15/course.xml"
 
 @interface SelectCourseController ()
@@ -86,9 +88,13 @@
 
 //cell 按钮点击 代理事件
 -(void)labelButtonClick:(KWJLableButton *)button{
-//    NSLog(@"%@ ",button.title);
-    UIAlertView *alertView = [[UIAlertView alloc]initWithTitle:button.title message:@"选择" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"取消", nil];
-    [alertView show];
+    KWJCourseAlertView *alert = [KWJCourseAlertView tableAlertWithTitle:button.title cancelButtonTitle:@"取消" courseware:button.coursewareArray delegate:self];
+    
+    [alert show];
 }
 
+// alert 代理事件
+-(void)cellSeleted:(KWJCourseAlertView *)alert cousewarw:(Courseware *)courseware{
+    NSLog(@"path %@",courseware.path);
+}
 @end

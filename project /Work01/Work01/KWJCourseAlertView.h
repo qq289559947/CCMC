@@ -7,7 +7,38 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <QuartzCore/QuartzCore.h>
+#import "Courseware.h"
 
-@interface KWJCourseAlertView : UIAlertView
+@class KWJCourseAlertView;
+
+
+@protocol  KWJCourseAlertDelegete <NSObject>
+@optional
+-(void)cellSeleted:(KWJCourseAlertView *)alert cousewarw:(Courseware *)courseware;
+
+@end
+
+// Blocks definition for table view management
+typedef void (^KWJCourseAlertRowSelectionBlock)(NSIndexPath *selectedIndex);
+typedef void (^KWJCourseAlertCompletionBlock)(void);
+
+
+@interface KWJCourseAlertView : UIView <UITableViewDataSource, UITableViewDelegate>
+
+@property (nonatomic, strong) UITableView *table;
+
+@property (nonatomic, assign) CGFloat height;
+
+@property (nonatomic, strong) KWJCourseAlertCompletionBlock completionBlock;	// Called when Cancel button pressed 取消按钮按下时调用
+@property (nonatomic, strong) KWJCourseAlertRowSelectionBlock selectionBlock;	// Called when a row in table view is pressed 当一行在表视图 选中时
+@property (nonatomic) id<KWJCourseAlertDelegete> delegates;
+
+// Classe method; rowsBlock and cellsBlock MUST NOT be nil
+// 取消键的 文字
++(KWJCourseAlertView *)tableAlertWithTitle:(NSString *)title cancelButtonTitle:(NSString *)cancelBtnTitle courseware:(NSArray *)coursewareArray delegate:(id)object;
+
+// Show the alert
+-(void)show;
 
 @end

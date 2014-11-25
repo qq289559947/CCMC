@@ -19,7 +19,7 @@
 -(id)initWithArray:(NSArray *)array{
     if (self = [super init]) {
         _title = ((NSDictionary *)array[0])[@"title"];
-        _path = ((NSDictionary *)array[0])[@"path"];
+        _path = ((NSDictionary *)array[1])[@"path"];
     }
     return self;
 }
